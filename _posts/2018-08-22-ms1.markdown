@@ -12,46 +12,8 @@ description: 面试题1的解决实现
 字符串2：<input id="str2" type="text" style="width:500px" value="this is a text for c programming" />
 <button id="doresult">处理</button>
 <p id="result"></p>
-
+<script src="/assets/js/suanfa1.js"></script>
 <script>
-
-
-
-function getsecondstr(s1,s2){
-    var ss1 = s1.split(" ");
-    var ss2 = s2.split(" ");
-    function arr( arr1, arr2){
-    var arr = [];
-    if(arr1.length > arr2.length){
-            for( var i in arr1 ){
-                if(arr2.indexOf(arr1[i]) != "-1"){
-                    if(arr.indexOf(arr1[i]) == "-1"){                               
-                        arr.push(arr1[i]);
-                    }
-                }
-            };
-        }else{
-            for( var i in arr2 ){
-                if(arr1.indexOf(arr2[i]) != "-1"){
-                    if(arr.indexOf(arr2[i]) == "-1"){                               
-                        arr.push(arr2[i]);;
-                    }
-                }
-            };
-        }
-        return arr;
-    }
-    var re=arr(ss1,ss2);
-    re.sort(function (a,b) {
-            return b.length - a.length;
-    });
-    console.log(re);
-    return re[1]
-}
-
-
-
-
     $("#doresult").click(function(){
         var s1 = $("#str1").val();
         var s2 = $("#str2").val();

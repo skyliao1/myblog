@@ -10,8 +10,10 @@ description: 面试题2的解决实现
 
 <button id="doresult">处理</button>
 <p id="result"></p>
+
 <script>
-function getDivide(n)  
+
+    function getDivide(n)  
     {  
 		var str="";
         if(n>2)  
@@ -62,10 +64,6 @@ function getDivide(n)
 		console.log(str);
 		return str;
     }  
-	
-	
-	
-
 
     $("#doresult").click(function(){
         $("#result").html("")
