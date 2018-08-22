@@ -1,8 +1,8 @@
 ---
 layout: post
 title:  "Read Me"
-categories: Other
-tags: Other
+categories: 生活
+tags: 杂谈
 author: Xixia
 description: The read me page of jekyll-xixia.
 ---

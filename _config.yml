@@ -1,7 +1,7 @@
 # Jekyll configuration
 
-name: Xixia
-description: Welcome to Xixia！
+name: skyliao
+description: 诗人程序员
 
 # url is currently only used only for the RSS feed in feed.xml
 url: https://github.com/zxixia/jekyll-xixia
@@ -18,7 +18,7 @@ date_format:
   categories: "%b-%Y"
   tag: "%b-%Y"
 # Language
-lan: "en" 
+lan: "cn" 
 
 paginate: 10
 
