@@ -1,0 +1,95 @@
+---
+layout: post
+title:  "面试题3-2"
+categories: 技术
+tags: 面试
+author: skeyliao
+description: 面试题3-2的解决实现
+---
+<script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=zNV0aVtK2Z5blHxxEcaHy5857A3kE7Ky"></script>
+
+
+
+<p style="color:green">
+百度
+<div id="allmap" style="height:400px;width:715px"></div>
+</p>
+
+<p style="color:green">
+阿里巴巴
+<div id="allmap2" style="height:400px;width:715px"></div>
+</p>
+
+<p style="color:green">
+武汉斗鱼网络科技有限公司
+<div id="allma" style="height:400px;width:715px"></div>
+</p>
+
+<script type="text/javascript">
+	// 百度地图API功能
+	$(function(){
+        	var map = new BMap.Map("allmap");
+	var point = new BMap.Point(116.307689,40.056974);
+	var marker = new BMap.Marker(point);  // 创建标注
+	map.addOverlay(marker);              // 将标注添加到地图中
+	map.centerAndZoom(point, 65);
+	var opts = {
+	  width : 200,     // 信息窗口宽度
+	  height: 100,     // 信息窗口高度
+	  title : "百度大厦" , // 信息窗口标题
+	  enableMessage:true,//设置允许信息窗发送短息
+	  message:"亲为啥有些内容搜索不出来。。。。。。"
+	}
+	var infoWindow = new BMap.InfoWindow("地址：北京市海淀区上地十街10号 ", opts);  // 创建信息窗口对象 
+	marker.addEventListener("click", function(){          
+		map.openInfoWindow(infoWindow,point); //开启信息窗口
+	});
+
+
+    })
+
+
+
+    $(function(){
+        var map = new BMap.Map("allmap2");
+	var point = new BMap.Point(120.29969,30.162319);
+	var marker = new BMap.Marker(point);  // 创建标注
+	map.addOverlay(marker);              // 将标注添加到地图中
+	map.centerAndZoom(point, 45);
+	var opts = {
+	  width : 200,     // 信息窗口宽度
+	  height: 100,     // 信息窗口高度
+	  title : "阿里巴巴总部" , // 信息窗口标题
+	  enableMessage:true,//设置允许信息窗发送短息
+	  message:"中国最富的互联网公司果然不负盛名"
+	}
+	var infoWindow = new BMap.InfoWindow("江省杭州市萧山区商城南路339号东南100米", opts);  // 创建信息窗口对象 
+	marker.addEventListener("click", function(){          
+		map.openInfoWindow(infoWindow,point); //开启信息窗口
+	});
+    })
+
+    $(function(){
+        var map = new BMap.Map("allma");
+	var point = new BMap.Point(114.41567,30.484219);
+	var marker = new BMap.Marker(point);  // 创建标注
+	map.addOverlay(marker);              // 将标注添加到地图中
+	map.centerAndZoom(point, 45);
+	var opts = {
+	  width : 200,     // 信息窗口宽度
+	  height: 100,     // 信息窗口高度
+	  title : "武汉斗鱼网络科技有限公司" , // 信息窗口标题
+	  enableMessage:true,//设置允许信息窗发送短息
+	  message:"百闻不如一见，果然是帅哥美女多多啊"
+	}
+	var infoWindow = new BMap.InfoWindow("地址：湖北省武汉市洪山区关山大道光谷软件园F4栋 ", opts);  // 创建信息窗口对象 
+	marker.addEventListener("click", function(){          
+		map.openInfoWindow(infoWindow,point); //开启信息窗口
+	});
+    
+
+
+    })
+
+
+</script>
