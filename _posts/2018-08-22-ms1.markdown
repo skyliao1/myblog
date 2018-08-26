@@ -3,6 +3,7 @@ layout: post
 title:  "面试题1"
 categories: 技术
 tags: 面试
+date: 2025-10-12
 author: skeyliao
 description: 面试题1的解决实现
 ---
