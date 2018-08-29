@@ -20,4 +20,4 @@ description: 博客的诞生日.
     }
 
 </style>
-<p class="animated infinite bounce delay-2s wel" style="color: #f35626;font-size: 3rem;">你好世界,欢迎访问我的博客!</p>
+<p class="animated infinite bounce delay-2s wel" style="color: #f35626;font-size: 3rem;">你好世界,欢迎访问我的博客!更多精彩内容敬请期待</p>
