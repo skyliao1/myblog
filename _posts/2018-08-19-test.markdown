@@ -6,4 +6,18 @@ tags: 初心笔谈
 author: skeyliao
 description: 博客的诞生日.
 ---
-<p style="color:green">你好世界，欢迎访问我的博客342</p>
+
+<link href="/assets/css/anima.css" rel="stylesheet"> 
+<style>
+    .wel{
+            font-size: 3rem;
+            color: #f35626;
+            background-image: -webkit-linear-gradient(92deg,#03A9F4,#4CAF50);
+            -webkit-text-fill-color: transparent;
+            line-height: 1.8;
+            font-family: Roboto, Verdana, sans-serif;
+            -webkit-background-clip: text;
+    }
+
+</style>
+<p class="animated infinite bounce delay-2s wel" style="color: #f35626;font-size: 3rem;">你好世界,欢迎访问我的博客!</p>
